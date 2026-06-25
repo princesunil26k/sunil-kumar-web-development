@@ -1,9 +1,38 @@
 body{
     text-align:center;
-    font-family:Arial;
+    font-family:Arial, sans-serif;
+    background:#f0f8ff;
+}
+
+h1{
+    color:#333;
+}
+
+.info{
+    margin:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.info span{
+    margin:0 20px;
 }
 
 canvas{
-    border:2px solid black;
-    background:skyblue;
+    border:3px solid #333;
+    background:linear-gradient(#87ceeb,#dff6ff);
+}
+
+.hidden{
+    display:none;
+}
+
+#gameOver{
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+    cursor:pointer;
 }
