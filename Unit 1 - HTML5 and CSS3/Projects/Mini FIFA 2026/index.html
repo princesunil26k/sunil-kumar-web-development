@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini FIFA 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚽ Mini FIFA 2026 ⚽</h1>
+
+<div id="menu">
+    <h2>Select Country</h2>
+
+    <select id="country">
+        <option>India</option>
+        <option>Brazil</option>
+        <option>Argentina</option>
+        <option>Germany</option>
+    </select>
+
+    <button onclick="startGame()">Start Match</button>
+</div>
+
+<div id="gameArea" style="display:none;">
+
+    <div class="info">
+        Score: <span id="score">0</span>
+        |
+        Time: <span id="timer">60</span>
+        |
+        Team: <span id="teamName"></span>
+    </div>
+
+    <canvas id="gameCanvas" width="900" height="500"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
