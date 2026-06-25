@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000;"></canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+// Rectangle
+ctx.fillStyle = "green";
+ctx.fillRect(20, 20, 100, 60);
+
+// Circle
+ctx.beginPath();
+ctx.arc(200, 50, 30, 0, 2 * Math.PI);
+ctx.fillStyle = "red";
+ctx.fill();
+
+// Triangle
+ctx.beginPath();
+ctx.moveTo(300, 20);
+ctx.lineTo(250, 100);
+ctx.lineTo(350, 100);
+ctx.closePath();
+ctx.fillStyle = "blue";
+ctx.fill();
+
+// Line
+ctx.beginPath();
+ctx.moveTo(50, 150);
+ctx.lineTo(250, 150);
+ctx.stroke();
+
+// Ellipse
+ctx.beginPath();
+ctx.ellipse(400, 150, 60, 30, 0, 0, 2 * Math.PI);
+ctx.stroke();
+</script>
+
+</body>
+</html>
